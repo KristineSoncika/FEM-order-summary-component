@@ -217,7 +217,7 @@ section {
 
 @media screen and (min-width: 376px) {
   .payment-plan {
-    padding: 0 0 11px 0;
+    padding: 22px 0;
   }
 
   .payment-plan-item p {
