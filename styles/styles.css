@@ -32,7 +32,12 @@ body {
   font-size: 16px;
   background-image: url("../images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   background-color: var(--pale-blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -46,8 +51,8 @@ h2 {
 }
 
 h1 {
-  margin-bottom: 15px;
   font-size: 1.45rem;
+  padding-bottom: 1.2rem;
 }
 
 h2 {
@@ -57,6 +62,7 @@ h2 {
 p {
   color: var(--desaturated-blue);
   line-height: 1.6;
+  font-size: 0.99rem;
 }
 
 li {
@@ -66,12 +72,11 @@ li {
 @media screen and (min-width: 376px) {
   body {
     background-image: url("../images/pattern-background-desktop.svg");
-    background-size: contain;
   }
 
   h1 {
     font-size: 1.7rem;
-    margin: 40px 0 20px 0;
+    padding-top: 5px;
   }
 
   h2 {
@@ -83,7 +88,6 @@ li {
 ======================================== */
 
 .card {
-  margin: 20% auto;
   width: 87%;
   text-align: center;
   border-radius: 20px;
@@ -92,15 +96,34 @@ li {
   box-shadow: 0px 20px 40px -7px rgba(56, 41, 224, 0.2);
 }
 
+main {
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header {
+  height: 159.5px;
+}
+
 section {
-  margin: 23px auto;
   width: 85%;
 }
 
 @media screen and (min-width: 376px) {
   .card {
     max-width: 450px;
-    margin: 12% auto;
+    height: 696px;
+  }
+
+  main {
+    height: 480px;
+  }
+
+  header {
+    height: 220px;
   }
 
   section {
@@ -113,7 +136,7 @@ section {
 
 .button {
   text-decoration: none;
-  padding: 14px 0;
+  padding: 15px 0;
   border-radius: 11px;
   font-weight: 700;
   font-size: 0.93rem;
@@ -132,8 +155,8 @@ section {
 
 .button-secondary {
   color: var(--desaturated-blue);
-  margin-top: 12px;
   transition: color 0.5s ease;
+  margin-top: 10px;
 }
 
 .button-secondary:hover {
@@ -160,17 +183,14 @@ section {
     font-size: 0.88rem;
   }
 
-  .button-primary {
-    margin-top: 30px;
-  }
-  .button-secondary {
-    margin: 18px 0 35px 0;
-  }
-}
 
 /* 5. Page Styles
 ======================================== */
 
+.order-content p {
+  margin: 0 auto;
+  width: 95%;
+}
 .payment-plan {
   background-color: var(--very-pale-blue);
   border-radius: 11px;
@@ -197,7 +217,7 @@ section {
 
 @media screen and (min-width: 376px) {
   .payment-plan {
-    padding: 23px 0;
+    padding: 0 0 11px 0;
   }
 
   .payment-plan-item p {
