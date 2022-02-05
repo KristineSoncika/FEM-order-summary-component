@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL [**here**](https://github.com/KristineSoncika/FEM-order-summary-component)
-- Live Site URL [**here**](https://your-live-site-url.com)
+- Live Site URL [**here**](https://kristinesoncika.github.io/FEM-order-summary-component/)
 
 ### Built with
 
