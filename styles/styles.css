@@ -1,0 +1,207 @@
+/* Site Stylesheet
+    1. Glogal styles
+    2. Typography Styles
+    3. Structure Styles
+    4. Component Styles
+    5. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --purple: rgb(106, 90, 205);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Typography Styles
+======================================== */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 1.45rem;
+}
+
+h2 {
+  font-size: 0.9rem;
+}
+
+p {
+  color: var(--desaturated-blue);
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    margin: 40px 0 20px 0;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+/* 3. Structure Styles
+======================================== */
+
+.card {
+  margin: 20% auto;
+  width: 87%;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: 0px 20px 40px -7px rgba(56, 41, 224, 0.2);
+}
+
+section {
+  margin: 23px auto;
+  width: 85%;
+}
+
+@media screen and (min-width: 376px) {
+  .card {
+    max-width: 450px;
+    margin: 12% auto;
+  }
+
+  section {
+    width: 79%;
+  }
+}
+
+/* 4. Component Styles
+======================================== */
+
+.button {
+  text-decoration: none;
+  padding: 14px 0;
+  border-radius: 11px;
+  font-weight: 700;
+  font-size: 0.93rem;
+}
+
+.button-primary {
+  background-color: var(--bright-blue);
+  color: var(--white);
+  box-shadow: 0px 15px 30px 5px rgba(56, 41, 224, 0.25);
+  transition: background-color 0.5s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--purple);
+}
+
+.button-secondary {
+  color: var(--desaturated-blue);
+  margin-top: 12px;
+  transition: color 0.5s ease;
+}
+
+.button-secondary:hover {
+  color: var(--dark-blue);
+}
+
+.change-button {
+  font-size: 0.82rem;
+  margin-left: 40px;
+  font-weight: 700;
+  color: var(--bright-blue);
+  text-decoration: underline;
+  text-decoration-color: var(--bright-blue);
+  transition: text-decoration-color 0.5s ease;
+}
+
+.change-button:hover {
+  text-decoration-color: transparent;
+}
+
+@media screen and (min-width: 376px) {
+  .change-button {
+    margin-left: 90px;
+    font-size: 0.88rem;
+  }
+
+  .button-primary {
+    margin-top: 30px;
+  }
+  .button-secondary {
+    margin: 18px 0 35px 0;
+  }
+}
+
+/* 5. Page Styles
+======================================== */
+
+.payment-plan {
+  background-color: var(--very-pale-blue);
+  border-radius: 11px;
+  padding: 15px 0;
+}
+
+.payment-plan-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.payment-plan-item p {
+  font-size: 0.92rem;
+}
+
+.music-icon {
+  width: 47px;
+  margin-right: 18px;
+}
+
+.payment a {
+  display: block;
+}
+
+@media screen and (min-width: 376px) {
+  .payment-plan {
+    padding: 23px 0;
+  }
+
+  .payment-plan-item p {
+    font-size: 1rem;
+    line-height: 2;
+  }
+}
